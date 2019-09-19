@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+@font-face {
+  font-family: main;
+  src: url('Quantum.otf');
+}
+@font-face {
+  font-family: sub;
+  src: url('Coves Bold.otf');
+}
+body
+{
+    background-color: #121212;
+    color: beige;
+    display:flex;
+    width: 100%;
+    user-select: none;
+    height: 100%;
+    -moz-user-select: none;
+    -webkit-user-select:none;
+}
+span
+{
+color:#ff0000;
+}
+nav
+{
+    display:grid;
+    width:100%;
+    height:10vh;
+    font-family: main;
+}
+form
+{
+    display: grid;
+    height: 40vh;
+    width: 100%;
+}
+#inp{
+border:none;
+width: 75%;
+text-align:center;
+    height:5vh;
+    font-size: 3vh;
+    background:none;
+    color: #fff;
+    padding: 10px;
+}
+div.k
+{
+    display: grid;
+    width:100%;
+    font-family: main;
+}
+::placeholder
+{
+    color: #fff;
+    font-family: sub;
+}
+h1
+{
+    margin-top: 25px;
+    font-size:7vh;
+    font-weight: 100;
+    padding: 10px;
+}
+input[type="text"],input[type="password"]
+{
+    width: 75%;
+    height:8vh;
+    font-size: 2vh;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    padding: 10px;
+}
+input[type="button"]:active
+{opacity: .8; }
+input[type="button"]
+{
+    width: 75%;
+    height:8vh;
+    border: 0px solid #fff;
+    color: #111;
+    background-color: #fff;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 2.8vh;
+}
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
